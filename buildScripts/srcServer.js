@@ -4,8 +4,8 @@ import chalk from 'chalk';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
-/* eslint-disable no-console */
 
+/* eslint-disable no-console */
 var path = require('path');
 var open = require('open');
 const compiler = webpack(config);
