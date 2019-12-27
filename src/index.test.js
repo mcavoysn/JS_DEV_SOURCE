@@ -9,7 +9,7 @@ describe('Our first test', () => {
 });
 
 describe('Our second test', () => {
-    it('should pass', () => {
+    it('should pass NOW', () => {
         expect(true).to.equal(true);
     });
 });
