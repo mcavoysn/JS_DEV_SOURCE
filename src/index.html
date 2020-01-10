@@ -3,13 +3,32 @@
 -->
 <html lang="en">
     <head>
+        <% if (htmlWebpackPlugin.options.trackJSToken) { %>
+            <!-- BEGIN TRACKJS-->
+            <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+            <script>
+                window.TrackJS && TrackJS.install({token: '<%=htmlWebpackPlugin.options.trackJSToken%>'});
+            </script>
+            <!-- END TRACKJS-->
+        <% } %>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div><font size="9" color="red"><b><h1>Hello World!</h1></b></font></div>
-        <script src="bundle.js"></script>
+        <h1>Users</h1>
+        <table>
+            <thead>
+                <th>&nbsp;</th>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </thead>
+            <tbody id="users">
+
+            </tbody>
+        </table>
     </body>
 
 </html>
