@@ -6,7 +6,7 @@ import chalk from 'chalk';
 export default function getBaseUrl() {
     console.log (chalk.red('@@@@@@@@@@@ getBaseUrl called @@@@@@@@@@'));
 
-    return getParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+    return getParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://peaceful-reaches-36127.herokuapp.com/';
 }
 
 function getParameterByName(name, url) {
